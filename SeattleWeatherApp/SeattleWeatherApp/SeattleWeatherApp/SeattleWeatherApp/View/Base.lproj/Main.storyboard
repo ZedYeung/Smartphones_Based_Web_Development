@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="SeattleWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background1" translatesAutoresizingMaskIntoConstraints="NO" id="YXF-XU-GQy">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jdw-Ir-krM">
+                                <rect key="frame" x="50" y="70" width="275" height="547"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rd-z3-uzp">
+                                        <rect key="frame" x="73.5" y="0.0" width="128" height="131"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <state key="normal" title="Change City">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChangeCityButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xxB-pw-rWf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VK-bE-pad">
+                                        <rect key="frame" x="70" y="139" width="135" height="130.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather Condition" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uai-U1-Fc0">
+                                        <rect key="frame" x="19.5" y="277.5" width="236" height="131"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperature" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKI-vQ-d85">
+                                        <rect key="frame" x="56.5" y="416.5" width="162" height="130.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jdw-Ir-krM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="9OU-ij-QBe"/>
+                            <constraint firstItem="jdw-Ir-krM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="BBv-NY-IoF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jdw-Ir-krM" secondAttribute="trailing" constant="50" id="Df8-FO-eOy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jdw-Ir-krM" secondAttribute="bottom" constant="50" id="hMD-G9-WSq"/>
+                            <constraint firstItem="YXF-XU-GQy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hv1-rz-qAr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YXF-XU-GQy" secondAttribute="bottom" id="hyh-b7-Vsh"/>
+                            <constraint firstItem="YXF-XU-GQy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kft-V0-bSc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YXF-XU-GQy" secondAttribute="trailing" id="xo5-YD-Pev"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblCityName" destination="8VK-bE-pad" id="SFe-f2-gJb"/>
+                        <outlet property="lblTemperature" destination="eKI-vQ-d85" id="mHq-lq-7TB"/>
+                        <outlet property="lblWeatherCondition" destination="Uai-U1-Fc0" id="ysv-3a-2Tq"/>
+                        <segue destination="ef0-RP-kwk" kind="show" identifier="ChangeCitySegue" id="0p4-iz-Tjg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="133"/>
+        </scene>
+        <!--Change City View Controller-->
+        <scene sceneID="fkE-7P-y6f">
+            <objects>
+                <viewController id="ef0-RP-kwk" customClass="ChangeCityViewController" customModule="SeattleWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9GJ-Vo-Hza">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background2" translatesAutoresizingMaskIntoConstraints="NO" id="zSv-2I-T0L">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="D17-ZH-eDV">
+                                <rect key="frame" x="50" y="70" width="275" height="547"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKj-cS-Cl7">
+                                        <rect key="frame" x="110.5" y="0.0" width="54" height="128.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="BackButtonPressed:" destination="ef0-RP-kwk" eventType="touchUpInside" id="AAd-SK-25A"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3KF-mB-dYF">
+                                        <rect key="frame" x="56.5" y="158.5" width="162" height="96.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ni-3P-5S1">
+                                        <rect key="frame" x="70.5" y="285" width="134" height="262"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                        <state key="normal" title="Change City">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChangeCityButtonPressed:" destination="ef0-RP-kwk" eventType="touchUpInside" id="KDM-nH-Vgt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VRn-10-KQ9" firstAttribute="trailing" secondItem="zSv-2I-T0L" secondAttribute="trailing" id="56u-Oj-iuW"/>
+                            <constraint firstItem="VRn-10-KQ9" firstAttribute="bottom" secondItem="D17-ZH-eDV" secondAttribute="bottom" constant="50" id="HpM-wf-Cza"/>
+                            <constraint firstItem="VRn-10-KQ9" firstAttribute="bottom" secondItem="zSv-2I-T0L" secondAttribute="bottom" id="VV6-qE-V19"/>
+                            <constraint firstItem="D17-ZH-eDV" firstAttribute="leading" secondItem="VRn-10-KQ9" secondAttribute="leading" constant="50" id="cab-Oe-w9n"/>
+                            <constraint firstItem="VRn-10-KQ9" firstAttribute="trailing" secondItem="D17-ZH-eDV" secondAttribute="trailing" constant="50" id="f1a-Mh-oT0"/>
+                            <constraint firstItem="zSv-2I-T0L" firstAttribute="leading" secondItem="VRn-10-KQ9" secondAttribute="leading" id="inb-Ry-S70"/>
+                            <constraint firstItem="D17-ZH-eDV" firstAttribute="top" secondItem="VRn-10-KQ9" secondAttribute="top" constant="50" id="s40-ol-jGR"/>
+                            <constraint firstItem="zSv-2I-T0L" firstAttribute="top" secondItem="VRn-10-KQ9" secondAttribute="top" id="tZP-Bq-YWX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VRn-10-KQ9"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtFieldCity" destination="3KF-mB-dYF" id="bNF-qO-wLy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Sq-cP-B9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1164" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Background1" width="360" height="640"/>
+        <image name="Background2" width="360" height="640"/>
+    </resources>
+</document>
