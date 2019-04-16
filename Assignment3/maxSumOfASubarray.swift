@@ -2,8 +2,8 @@ func maxSumOfASubarray(arr: [Int]) -> Int {
     if (arr.count == 0) {
       return 0
     }
-    
-    var res: Int = 0
+
+    var res: Int = arr[0]
     var cur: Int = arr[0]
 
     for index in 1...(arr.count - 1) {
