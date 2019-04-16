@@ -1,7 +1,7 @@
 class Scissors: Tool {
 
-    init(strength: Int) {
-        self.setStrength(strength: strength)
+    override init(strength: Int) {
+        super.init(strength: strength)
         self.type = "s"
     }
 

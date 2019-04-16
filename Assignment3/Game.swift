@@ -2,6 +2,10 @@ class Tool {
     var strength = 0
     var type = ""
 
+    init(strength: Int) {
+        self.strength = strength
+    }
+
     func setStrength(strength: Int) {
         self.strength = strength
     }
@@ -10,8 +14,8 @@ class Tool {
 
 class Paper: Tool {
 
-    init(strength: Int) {
-        self.setStrength(strength: strength)
+    override init(strength: Int) {
+        super.init(strength: strength)
         self.type = "p"
     }
 
@@ -29,8 +33,8 @@ class Paper: Tool {
 
 class Scissors: Tool {
 
-    init(strength: Int) {
-        self.setStrength(strength: strength)
+    override init(strength: Int) {
+        super.init(strength: strength)
         self.type = "s"
     }
 
@@ -47,8 +51,8 @@ class Scissors: Tool {
 
 class Rock: Tool {
 
-    init(strength: Int) {
-        self.setStrength(strength: strength)
+    override init(strength: Int) {
+        super.init(strength: strength)
         self.type = "r"
     }
 
