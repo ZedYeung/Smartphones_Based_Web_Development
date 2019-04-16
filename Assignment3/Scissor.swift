@@ -1,4 +1,4 @@
-class Paper: Tool {
+class Scissors: Tool {
 
     init(strength: Int) {
         self.setStrength(strength: strength)

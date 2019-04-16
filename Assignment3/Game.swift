@@ -27,7 +27,7 @@ class Paper: Tool {
 }
 
 
-class Paper: Tool {
+class Scissors: Tool {
 
     init(strength: Int) {
         self.setStrength(strength: strength)
@@ -45,7 +45,7 @@ class Paper: Tool {
     }
 }
 
-class Paper: Tool {
+class Rock: Tool {
 
     init(strength: Int) {
         self.setStrength(strength: strength)
