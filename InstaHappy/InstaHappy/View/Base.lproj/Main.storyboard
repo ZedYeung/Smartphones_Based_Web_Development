@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5nJ-AV-hhK">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="9oN-Fx-kG9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="9oN-Fx-kG9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HfU-W1-d38" userLabel="Stack View Top">
-                                <rect key="frame" x="20" y="89" width="335" height="214"/>
+                                <rect key="frame" x="20" y="113" width="335" height="214"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcB-gQ-SXy">
                                         <rect key="frame" x="10" y="0.0" width="315" height="36"/>
@@ -40,7 +40,7 @@
                                         <rect key="frame" x="20" y="86" width="295" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BlB-DS-aMT">
                                         <rect key="frame" x="20" y="126" width="295" height="48"/>
@@ -50,7 +50,6 @@
                                         </state>
                                         <connections>
                                             <action selector="LoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVT-Jj-Ima"/>
-                                            <segue destination="LfS-1g-5nA" kind="show" id="d19-Lg-h5h"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmX-yQ-A19">
@@ -73,8 +72,8 @@
                                     <constraint firstItem="BlB-DS-aMT" firstAttribute="leading" secondItem="HfU-W1-d38" secondAttribute="leading" constant="20" id="vGz-vP-a7W"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v9E-6q-6iH" userLabel="Stack View Buttom">
-                                <rect key="frame" x="36" y="589" width="303" height="68"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="v9E-6q-6iH" userLabel="Stack View Buttom">
+                                <rect key="frame" x="36" y="703" width="303" height="65"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CjH-zv-52H">
                                         <rect key="frame" x="20" y="0.0" width="263" height="30"/>
@@ -86,7 +85,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBg-kP-ST3">
-                                        <rect key="frame" x="20" y="38" width="263" height="30"/>
+                                        <rect key="frame" x="20" y="35" width="263" height="30"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -105,18 +104,31 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9oN-Fx-kG9" secondAttribute="bottom" id="2qc-DU-Mtp"/>
                             <constraint firstAttribute="trailing" secondItem="9oN-Fx-kG9" secondAttribute="trailing" id="8nW-nn-c6P"/>
+                            <constraint firstItem="v9E-6q-6iH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="C1k-oQ-GKU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v9E-6q-6iH" secondAttribute="trailing" constant="20" id="Ddn-e5-cY6"/>
+                            <constraint firstItem="v9E-6q-6iH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="H9q-J0-oII"/>
+                            <constraint firstAttribute="trailing" secondItem="9oN-Fx-kG9" secondAttribute="trailing" id="IzD-fI-xmk"/>
                             <constraint firstItem="HfU-W1-d38" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="MWR-eb-kZH"/>
                             <constraint firstItem="HfU-W1-d38" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="McX-Vg-0aF"/>
+                            <constraint firstAttribute="bottom" secondItem="9oN-Fx-kG9" secondAttribute="bottom" id="MeH-Pc-tdD"/>
+                            <constraint firstItem="9oN-Fx-kG9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Nqu-xN-45E"/>
                             <constraint firstAttribute="trailingMargin" secondItem="v9E-6q-6iH" secondAttribute="trailing" constant="20" id="O6c-vA-wJi"/>
                             <constraint firstItem="9oN-Fx-kG9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OWg-Fz-bJg"/>
                             <constraint firstItem="9oN-Fx-kG9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UVf-Zm-8ps"/>
+                            <constraint firstItem="v9E-6q-6iH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Xjj-gh-SfK"/>
                             <constraint firstItem="v9E-6q-6iH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ZC3-AS-oqO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v9E-6q-6iH" secondAttribute="trailing" constant="20" id="aic-s1-CU5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HfU-W1-d38" secondAttribute="trailing" constant="20" id="aor-CG-djE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="v9E-6q-6iH" secondAttribute="bottom" constant="10" id="ays-iG-ukO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="v9E-6q-6iH" secondAttribute="bottom" constant="10" id="cCp-HY-lIp"/>
                             <constraint firstAttribute="bottom" secondItem="9oN-Fx-kG9" secondAttribute="bottom" id="gsc-u7-sxQ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="v9E-6q-6iH" secondAttribute="bottom" constant="10" id="gwX-Zb-Gpw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v9E-6q-6iH" secondAttribute="trailing" constant="20" id="iJg-dd-LF0"/>
                             <constraint firstAttribute="bottomMargin" secondItem="v9E-6q-6iH" secondAttribute="bottom" constant="10" id="ijP-do-J7c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9oN-Fx-kG9" secondAttribute="trailing" id="nga-6S-spi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="v9E-6q-6iH" secondAttribute="trailing" constant="20" id="pQk-3X-Yvj"/>
+                            <constraint firstItem="v9E-6q-6iH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="qpU-yq-v88"/>
                             <constraint firstItem="9oN-Fx-kG9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vmS-jf-80r"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -128,6 +140,7 @@
                         <outlet property="txtPassword" destination="sAe-Ma-RgP" id="e0u-UL-mZo"/>
                         <segue destination="CDK-Zs-nVa" kind="show" identifier="ForgotPasswordSegue" id="QLY-Wd-z0t"/>
                         <segue destination="BMY-qh-FuB" kind="show" identifier="SignupSegue" id="pX2-65-2vi"/>
+                        <segue destination="LfS-1g-5nA" kind="show" identifier="LoginSegue" id="drf-IN-8OT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -139,7 +152,7 @@
             <objects>
                 <viewController title="Forgot Password" id="CDK-Zs-nVa" customClass="ForgotPasswordViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mdy-tA-xSX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="56b-Nm-T3S"/>
@@ -154,7 +167,7 @@
             <objects>
                 <viewController title="Sign Up" id="BMY-qh-FuB" customClass="SignupViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vMN-QF-iHz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WnO-KE-qug"/>
@@ -170,7 +183,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5nJ-AV-hhK" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sfl-s3-uJy">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -187,7 +200,7 @@
             <objects>
                 <viewController id="nzV-IJ-40L" customClass="SearchViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PCx-Qu-pqM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdp-SX-pDO">
@@ -212,7 +225,7 @@
             <objects>
                 <viewController id="dgS-OE-U6v" customClass="HomeViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3jS-Al-9to">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CHU-kd-foT">
@@ -258,7 +271,7 @@
             <objects>
                 <viewController id="vxc-km-HPd" customClass="PostViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eUy-cv-rQg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1H-4m-hre">
@@ -283,7 +296,7 @@
             <objects>
                 <viewController id="Dh8-Uo-KRX" customClass="LikeViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m2t-d5-4bt" customClass="Like">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Like" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72t-Xc-Zv2">
@@ -308,7 +321,7 @@
             <objects>
                 <viewController id="pyS-fW-waI" customClass="ProfileViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Sj-lk-H8d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAn-m0-2yG">
@@ -330,11 +343,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="187.5" height="333.5"/>
-        <image name="add" width="18.5" height="18.5"/>
+        <image name="Background" width="187.66667175292969" height="333.66665649414062"/>
+        <image name="add" width="18.666666030883789" height="18.666666030883789"/>
         <image name="home" width="30" height="30"/>
-        <image name="like" width="18.5" height="18.5"/>
-        <image name="profile" width="18.5" height="18.5"/>
-        <image name="search" width="18.5" height="18.5"/>
+        <image name="like" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="profile" width="18.666666030883789" height="18.666666030883789"/>
+        <image name="search" width="18.666666030883789" height="18.666666030883789"/>
     </resources>
 </document>

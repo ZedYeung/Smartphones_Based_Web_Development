@@ -29,10 +29,12 @@ class LoginViewController: UIViewController {
         let password = txtPassword.text!
 
         if email.isEmail == false{
+            lblStatus.isHidden = false
             lblStatus.text = "Enter a valid e mail"
             return
         }
         if password.count < 6 {
+            lblStatus.isHidden = false
             lblStatus.text = "Enter correct password"
             return
         }
@@ -44,6 +46,7 @@ class LoginViewController: UIViewController {
             SVProgressHUD.dismiss()
             if error == nil{
                // perform segue
+                strongSelf.lblStatus.isHidden = false
                 strongSelf.performSegue(withIdentifier: "LoginSegue", sender: strongSelf)
             }
             else{
@@ -55,10 +58,12 @@ class LoginViewController: UIViewController {
 
 
     @IBAction func ForgotPasswordPressed(_ sender: Any) {
+        performSegue(withIdentifier: "ForgotPasswordSegue", sender: self)
     }
 
 
     @IBAction func SignupPressed(_ sender: Any) {
+        performSegue(withIdentifier: "SignupSegue", sender: self)
     }
 }
 
