@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9543C0E12268F0290057DE3A /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0E02268F0290057DE3A /* ForgotPasswordViewController.swift */; };
+		9543C0E32268F07F0057DE3A /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0E22268F07F0057DE3A /* SignupViewController.swift */; };
+		9543C0E52268F0B60057DE3A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0E42268F0B60057DE3A /* ProfileViewController.swift */; };
+		9543C0E72268F0F10057DE3A /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0E62268F0F10057DE3A /* LikeViewController.swift */; };
+		9543C0E92268F1390057DE3A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0E82268F1390057DE3A /* PostViewController.swift */; };
+		9543C0EB2268F15F0057DE3A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0EA2268F15F0057DE3A /* SearchViewController.swift */; };
+		9543C0ED2268F16C0057DE3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0EC2268F16C0057DE3A /* HomeViewController.swift */; };
 		95DAB3E32265729E009F3588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E22265729E009F3588 /* AppDelegate.swift */; };
 		95DAB3E52265729E009F3588 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E42265729E009F3588 /* LoginViewController.swift */; };
 		95DAB3E82265729E009F3588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3E62265729E009F3588 /* Main.storyboard */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9543C0E02268F0290057DE3A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		9543C0E22268F07F0057DE3A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		9543C0E42268F0B60057DE3A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9543C0E62268F0F10057DE3A /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		9543C0E82268F1390057DE3A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		9543C0EA2268F15F0057DE3A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		9543C0EC2268F16C0057DE3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		95DAB3DF2265729E009F3588 /* InstaHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAB3E22265729E009F3588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95DAB3E42265729E009F3588 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				95DAB3E42265729E009F3588 /* LoginViewController.swift */,
+				9543C0E02268F0290057DE3A /* ForgotPasswordViewController.swift */,
+				9543C0E22268F07F0057DE3A /* SignupViewController.swift */,
+				9543C0E42268F0B60057DE3A /* ProfileViewController.swift */,
+				9543C0E62268F0F10057DE3A /* LikeViewController.swift */,
+				9543C0E82268F1390057DE3A /* PostViewController.swift */,
+				9543C0EA2268F15F0057DE3A /* SearchViewController.swift */,
+				9543C0EC2268F16C0057DE3A /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +182,13 @@
 			files = (
 				95DAB3E52265729E009F3588 /* LoginViewController.swift in Sources */,
 				95DAB3E32265729E009F3588 /* AppDelegate.swift in Sources */,
+				9543C0EB2268F15F0057DE3A /* SearchViewController.swift in Sources */,
+				9543C0E92268F1390057DE3A /* PostViewController.swift in Sources */,
+				9543C0E52268F0B60057DE3A /* ProfileViewController.swift in Sources */,
+				9543C0ED2268F16C0057DE3A /* HomeViewController.swift in Sources */,
+				9543C0E32268F07F0057DE3A /* SignupViewController.swift in Sources */,
+				9543C0E12268F0290057DE3A /* ForgotPasswordViewController.swift in Sources */,
+				9543C0E72268F0F10057DE3A /* LikeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

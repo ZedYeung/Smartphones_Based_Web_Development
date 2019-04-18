@@ -127,7 +127,7 @@
         <!--Forgot Password-->
         <scene sceneID="Y2U-uj-73y">
             <objects>
-                <viewController title="Forgot Password" id="CDK-Zs-nVa" sceneMemberID="viewController">
+                <viewController title="Forgot Password" id="CDK-Zs-nVa" customClass="ForgotPasswordViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mdy-tA-xSX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +142,7 @@
         <!--Sign Up-->
         <scene sceneID="tq6-4R-SDH">
             <objects>
-                <viewController title="Sign Up" id="BMY-qh-FuB" sceneMemberID="viewController">
+                <viewController title="Sign Up" id="BMY-qh-FuB" customClass="SignupViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vMN-QF-iHz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,7 +175,7 @@
         <!--Search-->
         <scene sceneID="vh5-N3-Z9w">
             <objects>
-                <viewController id="nzV-IJ-40L" sceneMemberID="viewController">
+                <viewController id="nzV-IJ-40L" customClass="SearchViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PCx-Qu-pqM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -200,7 +200,7 @@
         <!--Home-->
         <scene sceneID="PrW-nA-6jO">
             <objects>
-                <viewController id="dgS-OE-U6v" sceneMemberID="viewController">
+                <viewController id="dgS-OE-U6v" customClass="HomeViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3jS-Al-9to">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,7 +246,7 @@
         <!--Post-->
         <scene sceneID="fcA-7L-dYx">
             <objects>
-                <viewController id="vxc-km-HPd" sceneMemberID="viewController">
+                <viewController id="vxc-km-HPd" customClass="PostViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eUy-cv-rQg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,8 +271,8 @@
         <!--Like-->
         <scene sceneID="4ce-yT-39H">
             <objects>
-                <viewController id="Dh8-Uo-KRX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m2t-d5-4bt">
+                <viewController id="Dh8-Uo-KRX" customClass="LikeViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m2t-d5-4bt" customClass="Like">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -296,7 +296,7 @@
         <!--Profile-->
         <scene sceneID="2L6-zG-0s7">
             <objects>
-                <viewController id="pyS-fW-waI" sceneMemberID="viewController">
+                <viewController id="pyS-fW-waI" customClass="ProfileViewController" customModule="InstaHappy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Sj-lk-H8d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
