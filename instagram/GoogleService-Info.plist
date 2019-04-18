@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>986305405532-nudl0kmeg1i38pg8t7ba49ufru55vip0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.986305405532-nudl0kmeg1i38pg8t7ba49ufru55vip0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDqRyg-E4FX_PQ6_4D6sINKgJySX_8u_6I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>986305405532</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ZedYeung.InstaHappy</string>
+	<key>PROJECT_ID</key>
+	<string>smartphoneneu</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smartphoneneu.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:986305405532:ios:747527413d63d0e6</string>
+	<key>DATABASE_URL</key>
+	<string>https://smartphoneneu.firebaseio.com</string>
+</dict>
+</plist>
