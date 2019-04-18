@@ -23,6 +23,18 @@ class LoginViewController: UIViewController {
         lblStatus.isHidden = true
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        let keyChain = KeychainService().keyChain
+        if keyChain.get("uid") != nil {
+            performSegue(withIdentifier: "LoginSegue", sender: self)
+        }
+    }
+
+    func AddKeyChainAfterLogin(uid: String){
+        let keyChain = KeychainService().keyChain
+        keyChain.set(uid, forKey: "uid")
+    }
+
 
     @IBAction func LoginPressed(_ sender: Any) {
         let email = txtEmail.text!
@@ -47,6 +59,7 @@ class LoginViewController: UIViewController {
             if error == nil{
                // perform segue
                 strongSelf.lblStatus.isHidden = false
+                strongSelf.AddKeyChainAfterLogin(uid: user!.user.uid)
                 strongSelf.performSegue(withIdentifier: "LoginSegue", sender: strongSelf)
             }
             else{
