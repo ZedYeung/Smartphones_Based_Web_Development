@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		95DAB3E32265729E009F3588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E22265729E009F3588 /* AppDelegate.swift */; };
-		95DAB3E52265729E009F3588 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E42265729E009F3588 /* ViewController.swift */; };
+		95DAB3E52265729E009F3588 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E42265729E009F3588 /* LoginViewController.swift */; };
 		95DAB3E82265729E009F3588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3E62265729E009F3588 /* Main.storyboard */; };
 		95DAB3EA2265729E009F3588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3E92265729E009F3588 /* Assets.xcassets */; };
 		95DAB3ED2265729E009F3588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3EB2265729E009F3588 /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		95DAB3DF2265729E009F3588 /* InstaHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAB3E22265729E009F3588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		95DAB3E42265729E009F3588 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95DAB3E42265729E009F3588 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95DAB3E72265729E009F3588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95DAB3E92265729E009F3588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DAB3EC2265729E009F3588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +35,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9543C0DD2268DD850057DE3A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9543C0DE2268DD8F0057DE3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB3E62265729E009F3588 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9543C0DF2268DD9A0057DE3A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				95DAB3E42265729E009F3588 /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		95DAB3D62265729E009F3588 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +77,10 @@
 		95DAB3E12265729E009F3588 /* InstaHappy */ = {
 			isa = PBXGroup;
 			children = (
+				9543C0DF2268DD9A0057DE3A /* Controller */,
+				9543C0DE2268DD8F0057DE3A /* View */,
+				9543C0DD2268DD850057DE3A /* Model */,
 				95DAB3E22265729E009F3588 /* AppDelegate.swift */,
-				95DAB3E42265729E009F3588 /* ViewController.swift */,
-				95DAB3E62265729E009F3588 /* Main.storyboard */,
 				95DAB3E92265729E009F3588 /* Assets.xcassets */,
 				95DAB3EB2265729E009F3588 /* LaunchScreen.storyboard */,
 				95DAB3EE2265729E009F3588 /* Info.plist */,
@@ -135,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95DAB3E52265729E009F3588 /* ViewController.swift in Sources */,
+				95DAB3E52265729E009F3588 /* LoginViewController.swift in Sources */,
 				95DAB3E32265729E009F3588 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
