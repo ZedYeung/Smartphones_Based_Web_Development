@@ -49,6 +49,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="LoginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aVT-Jj-Ima"/>
                                             <segue destination="LfS-1g-5nA" kind="show" id="d19-Lg-h5h"/>
                                         </connections>
                                     </button>
@@ -80,12 +81,18 @@
                                         <state key="normal" title="Forgot Password">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="ForgotPasswordPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Sy-rL-U1S"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBg-kP-ST3">
                                         <rect key="frame" x="20" y="38" width="263" height="30"/>
                                         <state key="normal" title="Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="SignupPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJU-kh-kZp"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -116,6 +123,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="H2a-8L-Xvt"/>
                     <connections>
+                        <outlet property="lblStatus" destination="VmX-yQ-A19" id="0Yq-cV-FEW"/>
+                        <outlet property="txtEmail" destination="4AB-ys-HlG" id="klX-J0-TpO"/>
+                        <outlet property="txtPassword" destination="sAe-Ma-RgP" id="e0u-UL-mZo"/>
                         <segue destination="CDK-Zs-nVa" kind="show" identifier="ForgotPasswordSegue" id="QLY-Wd-z0t"/>
                         <segue destination="BMY-qh-FuB" kind="show" identifier="SignupSegue" id="pX2-65-2vi"/>
                     </connections>

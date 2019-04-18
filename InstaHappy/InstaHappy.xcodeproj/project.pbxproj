@@ -15,6 +15,7 @@
 		9543C0EB2268F15F0057DE3A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0EA2268F15F0057DE3A /* SearchViewController.swift */; };
 		9543C0ED2268F16C0057DE3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0EC2268F16C0057DE3A /* HomeViewController.swift */; };
 		9543C0EF2268FAF10057DE3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9543C0EE2268FAF10057DE3A /* GoogleService-Info.plist */; };
+		9543C0F22268FFE90057DE3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0F12268FFE90057DE3A /* Extensions.swift */; };
 		95DAB3E32265729E009F3588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E22265729E009F3588 /* AppDelegate.swift */; };
 		95DAB3E52265729E009F3588 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E42265729E009F3588 /* LoginViewController.swift */; };
 		95DAB3E82265729E009F3588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3E62265729E009F3588 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		9543C0EA2268F15F0057DE3A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9543C0EC2268F16C0057DE3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9543C0EE2268FAF10057DE3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../instagram/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9543C0F12268FFE90057DE3A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		95DAB3DF2265729E009F3588 /* InstaHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAB3E22265729E009F3588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95DAB3E42265729E009F3588 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +72,6 @@
 				6AAF131994A855AFE71F7D04 /* Pods-InstaHappy.debug.xcconfig */,
 				16C4D57B91440A63F1A21006 /* Pods-InstaHappy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +105,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		9543C0F02268FFC00057DE3A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9543C0F12268FFE90057DE3A /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		95DAB3D62265729E009F3588 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +134,7 @@
 		95DAB3E12265729E009F3588 /* InstaHappy */ = {
 			isa = PBXGroup;
 			children = (
+				9543C0F02268FFC00057DE3A /* Utils */,
 				9543C0EE2268FAF10057DE3A /* GoogleService-Info.plist */,
 				9543C0DF2268DD9A0057DE3A /* Controller */,
 				9543C0DE2268DD8F0057DE3A /* View */,
@@ -273,6 +283,7 @@
 				9543C0EB2268F15F0057DE3A /* SearchViewController.swift in Sources */,
 				9543C0E92268F1390057DE3A /* PostViewController.swift in Sources */,
 				9543C0E52268F0B60057DE3A /* ProfileViewController.swift in Sources */,
+				9543C0F22268FFE90057DE3A /* Extensions.swift in Sources */,
 				9543C0ED2268F16C0057DE3A /* HomeViewController.swift in Sources */,
 				9543C0E32268F07F0057DE3A /* SignupViewController.swift in Sources */,
 				9543C0E12268F0290057DE3A /* ForgotPasswordViewController.swift in Sources */,
