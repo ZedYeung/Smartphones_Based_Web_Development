@@ -17,6 +17,8 @@
 		9543C0EF2268FAF10057DE3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9543C0EE2268FAF10057DE3A /* GoogleService-Info.plist */; };
 		9543C0F22268FFE90057DE3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0F12268FFE90057DE3A /* Extensions.swift */; };
 		95512EC6226919A600338044 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95512EC5226919A600338044 /* KeychainService.swift */; };
+		95512EC82269243200338044 /* ForgotPasswordProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95512EC72269243200338044 /* ForgotPasswordProtocol.swift */; };
+		95512ECA2269244300338044 /* SignupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95512EC92269244300338044 /* SignupProtocol.swift */; };
 		95DAB3E32265729E009F3588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E22265729E009F3588 /* AppDelegate.swift */; };
 		95DAB3E52265729E009F3588 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E42265729E009F3588 /* LoginViewController.swift */; };
 		95DAB3E82265729E009F3588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3E62265729E009F3588 /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		9543C0EE2268FAF10057DE3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../instagram/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9543C0F12268FFE90057DE3A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		95512EC5226919A600338044 /* KeychainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		95512EC72269243200338044 /* ForgotPasswordProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordProtocol.swift; sourceTree = "<group>"; };
+		95512EC92269244300338044 /* SignupProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupProtocol.swift; sourceTree = "<group>"; };
 		95DAB3DF2265729E009F3588 /* InstaHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAB3E22265729E009F3588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95DAB3E42265729E009F3588 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		9543C0DF2268DD9A0057DE3A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				95512EC92269244300338044 /* SignupProtocol.swift */,
+				95512EC72269243200338044 /* ForgotPasswordProtocol.swift */,
 				95DAB3E42265729E009F3588 /* LoginViewController.swift */,
 				9543C0E02268F0290057DE3A /* ForgotPasswordViewController.swift */,
 				9543C0E22268F07F0057DE3A /* SignupViewController.swift */,
@@ -282,12 +288,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				95DAB3E52265729E009F3588 /* LoginViewController.swift in Sources */,
+				95512EC82269243200338044 /* ForgotPasswordProtocol.swift in Sources */,
 				95DAB3E32265729E009F3588 /* AppDelegate.swift in Sources */,
 				9543C0EB2268F15F0057DE3A /* SearchViewController.swift in Sources */,
 				9543C0E92268F1390057DE3A /* PostViewController.swift in Sources */,
 				95512EC6226919A600338044 /* KeychainService.swift in Sources */,
 				9543C0E52268F0B60057DE3A /* ProfileViewController.swift in Sources */,
 				9543C0F22268FFE90057DE3A /* Extensions.swift in Sources */,
+				95512ECA2269244300338044 /* SignupProtocol.swift in Sources */,
 				9543C0ED2268F16C0057DE3A /* HomeViewController.swift in Sources */,
 				9543C0E32268F07F0057DE3A /* SignupViewController.swift in Sources */,
 				9543C0E12268F0290057DE3A /* ForgotPasswordViewController.swift in Sources */,

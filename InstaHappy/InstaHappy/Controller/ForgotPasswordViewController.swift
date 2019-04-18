@@ -9,13 +9,31 @@
 import UIKit
 
 class ForgotPasswordViewController: UIViewController {
-
+    
+    var delegate: ForgotPasswordProtocol?
+    
+    @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var lblStatus: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lblStatus.isHidden = true
     }
 
+    @IBAction func resetPasswordPressed(_ sender: Any) {
+        let email = txtEmail.text!
+        
+        if email.isEmail == false{
+            lblStatus.isHidden = false
+            lblStatus.text = "Enter a valid e mail"
+            return
+        }
+        
+        delegate?.resetPassword(email: email)
+        self.dismiss(animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

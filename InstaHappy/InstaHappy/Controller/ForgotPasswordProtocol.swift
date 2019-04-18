@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ForgotPasswordProtocol {
-    func resetPassWord(email: String)
+    func resetPassword(email: String)
 }
