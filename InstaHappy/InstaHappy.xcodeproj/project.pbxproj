@@ -14,14 +14,18 @@
 		9543C0E92268F1390057DE3A /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0E82268F1390057DE3A /* PostViewController.swift */; };
 		9543C0EB2268F15F0057DE3A /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0EA2268F15F0057DE3A /* SearchViewController.swift */; };
 		9543C0ED2268F16C0057DE3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9543C0EC2268F16C0057DE3A /* HomeViewController.swift */; };
+		9543C0EF2268FAF10057DE3A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9543C0EE2268FAF10057DE3A /* GoogleService-Info.plist */; };
 		95DAB3E32265729E009F3588 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E22265729E009F3588 /* AppDelegate.swift */; };
 		95DAB3E52265729E009F3588 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DAB3E42265729E009F3588 /* LoginViewController.swift */; };
 		95DAB3E82265729E009F3588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3E62265729E009F3588 /* Main.storyboard */; };
 		95DAB3EA2265729E009F3588 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3E92265729E009F3588 /* Assets.xcassets */; };
 		95DAB3ED2265729E009F3588 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95DAB3EB2265729E009F3588 /* LaunchScreen.storyboard */; };
+		C313CB1BBB0814C9EF8E4100 /* Pods_InstaHappy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99305D1AE052759CEEC892DC /* Pods_InstaHappy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16C4D57B91440A63F1A21006 /* Pods-InstaHappy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaHappy.release.xcconfig"; path = "Target Support Files/Pods-InstaHappy/Pods-InstaHappy.release.xcconfig"; sourceTree = "<group>"; };
+		6AAF131994A855AFE71F7D04 /* Pods-InstaHappy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaHappy.debug.xcconfig"; path = "Target Support Files/Pods-InstaHappy/Pods-InstaHappy.debug.xcconfig"; sourceTree = "<group>"; };
 		9543C0E02268F0290057DE3A /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		9543C0E22268F07F0057DE3A /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		9543C0E42268F0B60057DE3A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +33,7 @@
 		9543C0E82268F1390057DE3A /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		9543C0EA2268F15F0057DE3A /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		9543C0EC2268F16C0057DE3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9543C0EE2268FAF10057DE3A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../instagram/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95DAB3DF2265729E009F3588 /* InstaHappy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaHappy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95DAB3E22265729E009F3588 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95DAB3E42265729E009F3588 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,7 @@
 		95DAB3E92265729E009F3588 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95DAB3EC2265729E009F3588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95DAB3EE2265729E009F3588 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99305D1AE052759CEEC892DC /* Pods_InstaHappy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaHappy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +49,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C313CB1BBB0814C9EF8E4100 /* Pods_InstaHappy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		029ED746BCF236A1BDD2577C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99305D1AE052759CEEC892DC /* Pods_InstaHappy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27472FB64F1599302EBD3C78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AAF131994A855AFE71F7D04 /* Pods-InstaHappy.debug.xcconfig */,
+				16C4D57B91440A63F1A21006 /* Pods-InstaHappy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9543C0DD2268DD850057DE3A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +109,8 @@
 			children = (
 				95DAB3E12265729E009F3588 /* InstaHappy */,
 				95DAB3E02265729E009F3588 /* Products */,
+				27472FB64F1599302EBD3C78 /* Pods */,
+				029ED746BCF236A1BDD2577C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +125,7 @@
 		95DAB3E12265729E009F3588 /* InstaHappy */ = {
 			isa = PBXGroup;
 			children = (
+				9543C0EE2268FAF10057DE3A /* GoogleService-Info.plist */,
 				9543C0DF2268DD9A0057DE3A /* Controller */,
 				9543C0DE2268DD8F0057DE3A /* View */,
 				9543C0DD2268DD850057DE3A /* Model */,
@@ -116,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95DAB3F12265729E009F3588 /* Build configuration list for PBXNativeTarget "InstaHappy" */;
 			buildPhases = (
+				8ABE64ED8D2BE51800D5B0CD /* [CP] Check Pods Manifest.lock */,
 				95DAB3DB2265729E009F3588 /* Sources */,
 				95DAB3DC2265729E009F3588 /* Frameworks */,
 				95DAB3DD2265729E009F3588 /* Resources */,
+				B6C26F0FD238734EB69241D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,12 +198,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				95DAB3ED2265729E009F3588 /* LaunchScreen.storyboard in Resources */,
+				9543C0EF2268FAF10057DE3A /* GoogleService-Info.plist in Resources */,
 				95DAB3EA2265729E009F3588 /* Assets.xcassets in Resources */,
 				95DAB3E82265729E009F3588 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8ABE64ED8D2BE51800D5B0CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaHappy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C26F0FD238734EB69241D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaHappy/Pods-InstaHappy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaHappy/Pods-InstaHappy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		95DAB3DB2265729E009F3588 /* Sources */ = {
@@ -332,6 +420,7 @@
 		};
 		95DAB3F22265729E009F3588 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AAF131994A855AFE71F7D04 /* Pods-InstaHappy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -349,6 +438,7 @@
 		};
 		95DAB3F32265729E009F3588 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16C4D57B91440A63F1A21006 /* Pods-InstaHappy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

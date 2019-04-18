@@ -1,0 +1,6 @@
+framework module Pods_InstaHappy {
+  umbrella header "Pods-InstaHappy-umbrella.h"
+
+  export *
+  module * { export * }
+}
