@@ -22,41 +22,49 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MfB-eh-0zc">
-                                <rect key="frame" x="20" y="164" width="374" height="210"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="golden-retriever-puppy" translatesAutoresizingMaskIntoConstraints="NO" id="MfB-eh-0zc">
+                                <rect key="frame" x="20" y="207" width="374" height="210"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6L-e4-RHI">
-                                <rect key="frame" x="141" y="425" width="135" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6L-e4-RHI">
+                                <rect key="frame" x="140" y="452" width="135" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Recognize"/>
                                 <connections>
                                     <action selector="DetectPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmW-BX-JNr"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xsD-tQ-Mfi">
-                                <rect key="frame" x="20" y="536" width="374" height="290"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NpH-Q3-vei">
+                                <rect key="frame" x="140" y="119" width="141" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Pick Image"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GY4-gx-IZ8"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yct-R6-v4v">
+                                <rect key="frame" x="90" y="640" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xsD-tQ-Mfi" secondAttribute="bottom" constant="36" id="2di-ce-JAr"/>
-                            <constraint firstItem="xsD-tQ-Mfi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4c5-7w-QKY"/>
-                            <constraint firstItem="MfB-eh-0zc" firstAttribute="centerX" secondItem="xsD-tQ-Mfi" secondAttribute="centerX" id="6Xl-OB-1d8"/>
-                            <constraint firstItem="xsD-tQ-Mfi" firstAttribute="top" secondItem="D6L-e4-RHI" secondAttribute="bottom" constant="63" id="6eL-ae-XJg"/>
                             <constraint firstItem="MfB-eh-0zc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Afv-QI-lN7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MfB-eh-0zc" secondAttribute="bottom" constant="488" id="Iqx-VM-xmp"/>
                             <constraint firstItem="MfB-eh-0zc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="VQH-ac-IBp"/>
                             <constraint firstAttribute="trailing" secondItem="MfB-eh-0zc" secondAttribute="trailing" constant="20" id="YkI-PS-4Y2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xsD-tQ-Mfi" secondAttribute="trailing" constant="20" id="cZ5-eR-Zku"/>
                             <constraint firstItem="D6L-e4-RHI" firstAttribute="top" secondItem="MfB-eh-0zc" secondAttribute="bottom" constant="51" id="d43-qd-Y3X"/>
                             <constraint firstItem="D6L-e4-RHI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="141" id="yDq-B8-Q3Z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="MfB-eh-0zc" id="pco-xM-PRE"/>
-                        <outlet property="tableView" destination="xsD-tQ-Mfi" id="ybf-UF-tkK"/>
+                        <outlet property="imageView" destination="MfB-eh-0zc" id="aMA-bi-d9W"/>
+                        <outlet property="textView" destination="yct-R6-v4v" id="dEm-Lo-fNm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -365,5 +373,6 @@
     </scenes>
     <resources>
         <image name="BackgroundImage" width="1242" height="2688"/>
+        <image name="golden-retriever-puppy" width="1100" height="734"/>
     </resources>
 </document>

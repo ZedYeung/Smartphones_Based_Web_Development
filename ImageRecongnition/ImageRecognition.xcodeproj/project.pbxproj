@@ -22,6 +22,7 @@
 		956EDEF62270F23F0029A024 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956EDEF22270F23F0029A024 /* SignupViewController.swift */; };
 		956EDEF72270F23F0029A024 /* SignupProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956EDEF32270F23F0029A024 /* SignupProtocol.swift */; };
 		956EDEF82270F23F0029A024 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956EDEF42270F23F0029A024 /* ForgotPasswordViewController.swift */; };
+		95BF99B4227122FE001669AD /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 95BF99B3227122FE001669AD /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		956EDEF22270F23F0029A024 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		956EDEF32270F23F0029A024 /* SignupProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupProtocol.swift; sourceTree = "<group>"; };
 		956EDEF42270F23F0029A024 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		95BF99B3227122FE001669AD /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		B3C97CBE9F6E14336E46652A /* Pods_ImageRecongnition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageRecongnition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2930103D39AA56971F95C28 /* Pods-ImageRecongnition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRecongnition.release.xcconfig"; path = "Target Support Files/Pods-ImageRecongnition/Pods-ImageRecongnition.release.xcconfig"; sourceTree = "<group>"; };
 		FF36E6CF4ED27886CE5621CD /* Pods-ImageRecongnition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageRecongnition.debug.xcconfig"; path = "Target Support Files/Pods-ImageRecongnition/Pods-ImageRecongnition.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				956EDEF42270F23F0029A024 /* ForgotPasswordViewController.swift */,
 				956EDEF32270F23F0029A024 /* SignupProtocol.swift */,
 				956EDEF22270F23F0029A024 /* SignupViewController.swift */,
+				95BF99B3227122FE001669AD /* Inceptionv3.mlmodel */,
 				956EDEDF2270E2C80029A024 /* ViewController.swift */,
 				9516450E227114F50098454F /* GoogleService-Info.plist */,
 				956EDEE12270E2C80029A024 /* Main.storyboard */,
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BF99B4227122FE001669AD /* Inceptionv3.mlmodel in Sources */,
 				9516450D227109050098454F /* Resnet50.mlmodel in Sources */,
 				956EDEF02270ECC60029A024 /* LoginViewController.swift in Sources */,
 				9516450B2270F63D0098454F /* Extensions.swift in Sources */,

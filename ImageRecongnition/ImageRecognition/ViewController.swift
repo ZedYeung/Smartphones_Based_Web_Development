@@ -12,8 +12,9 @@ import Vision
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet weak var image: UIImageView!
-
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -44,15 +45,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.present(actionSheet, animated: true, completion: nil)
     }
 
-    @IBAction func recognize(_ sender: UIButton) {
-        detectCloudLandmarks(image: image.image)
-    }
-
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 
-        let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
 
-        imageView.image = image;
+        self.imageView.image = pickedImage;
         picker.dismiss(animated: true, completion: nil)
     }
 
@@ -61,31 +58,33 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
 
     @IBAction func DetectPressed(_ sender: UIButton) {
-
-      guard let ciimage = CIImage(image: imageView.image!) else {
-          print("Unable to convert to CIImage")
-          return
-      }
-      DetectImage(image: ciimage)
+      DetectImage(image: imageView.image)
     }
 
-    func DetectImage(image: CIImage){
-
+    func DetectImage(image: UIImage?) {
+        guard let image = image else { return }
+        
+        guard let ciimage = CIImage(image: image) else {
+            print("Unable to convert to CIImage")
+            return
+        }
+        
         guard let model = try? VNCoreMLModel(for: Resnet50().model) else {
             print("Unable to get VNCoreMLModel")
             return
         }
 
         let request = VNCoreMLRequest(model: model){(request, error) in
-
+            
             guard let result = request.results as? [VNClassificationObservation] else { return}
 
-                print(result)
-
+            if let first = result.first {
+                self.textView.text = String("\(first.identifier) \(first.confidence)")
+            }
 
         }
 
-        let handler = VNImageRequestHandler(ciImage: image)
+        let handler = VNImageRequestHandler(ciImage: ciimage)
         do {
             try handler.perform([request])
         }
