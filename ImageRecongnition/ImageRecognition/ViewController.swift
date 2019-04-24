@@ -12,44 +12,40 @@ import Vision
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet weak var image: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func DetectPressed(_ sender: UIButton) {
+    @IBAction func uploadImage(_ sender: UIButton) {
+        let imagePicker = UIImagePickerController()
 
-        let imagePicker = UIImagePickerController();
         imagePicker.delegate = self
+        let actionSheet = UIAlertController(title: "Photo Source", message: "Choose a source", preferredStyle: .actionSheet)
 
-        let actionScript = UIAlertController(title: "Select Source of Image", message: "Photo Source", preferredStyle: .actionSheet )
-
-        actionScript.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (UIAlertAction) in
-            if UIImagePickerController.isSourceTypeAvailable(.camera){
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (UIAlertAction) in
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
                 imagePicker.sourceType = .camera
                 self.present(imagePicker, animated: true, completion: nil)
-            }
-            else{
-                print("Camera not Available")
+            } else {
+                print("Camera Not Available!")
             }
         }))
 
-        actionScript.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (UIAlertAction) in
-
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (UIAlertAction) in
             imagePicker.sourceType = .photoLibrary
             self.present(imagePicker, animated: true, completion: nil)
 
         }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
 
-        actionScript.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        self.present(actionScript, animated: true, completion: nil)
+        self.present(actionSheet, animated: true, completion: nil)
     }
 
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
+    @IBAction func recognize(_ sender: UIButton) {
+        detectCloudLandmarks(image: image.image)
     }
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -58,15 +54,20 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
         imageView.image = image;
         picker.dismiss(animated: true, completion: nil)
-
-        guard let ciimage = CIImage(image: image!) else {
-            print("Unable to convert to CIImage")
-            return
-        }
-        DetectImage(image: ciimage)
-
     }
 
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func DetectPressed(_ sender: UIButton) {
+
+      guard let ciimage = CIImage(image: imageView.image!) else {
+          print("Unable to convert to CIImage")
+          return
+      }
+      DetectImage(image: ciimage)
+    }
 
     func DetectImage(image: CIImage){
 
