@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>986305405532-iru26amffhch40vqrvolqbslr9f5278b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.986305405532-iru26amffhch40vqrvolqbslr9f5278b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDqRyg-E4FX_PQ6_4D6sINKgJySX_8u_6I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>986305405532</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ZedYeung.ImageRecognition</string>
+	<key>PROJECT_ID</key>
+	<string>smartphoneneu</string>
+	<key>STORAGE_BUCKET</key>
+	<string>smartphoneneu.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:986305405532:ios:5938f69ae526f01d</string>
+	<key>DATABASE_URL</key>
+	<string>https://smartphoneneu.firebaseio.com</string>
+</dict>
+</plist>
