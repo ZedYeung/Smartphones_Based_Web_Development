@@ -10,14 +10,28 @@ import UIKit
 import CoreML
 import Vision
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
-    
+
+    var rows: [String] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        table.delegate = self
+        table.dataSource = self
+    }
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rows.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = rows[indexPath.row]
+        return cell
     }
 
     @IBAction func uploadImage(_ sender: UIButton) {
@@ -63,20 +77,22 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     func DetectImage(image: UIImage?) {
         guard let image = image else { return }
-        
+
         guard let ciimage = CIImage(image: image) else {
             print("Unable to convert to CIImage")
             return
         }
-        
+
         guard let model = try? VNCoreMLModel(for: Resnet50().model) else {
             print("Unable to get VNCoreMLModel")
             return
         }
 
         let request = VNCoreMLRequest(model: model){(request, error) in
-            
+
             guard let result = request.results as? [VNClassificationObservation] else { return}
+
+            rows = Array(result.prefix(5))
 
             if let first = result.first {
                 self.textView.text = String("\(first.identifier) \(first.confidence)")
