@@ -14,8 +14,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textView: UITextView!
-
-    var rows: [String] = []
+    @IBOutlet weak var table: UITableView!
+    
+    var rows: [VNClassificationObservation] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
