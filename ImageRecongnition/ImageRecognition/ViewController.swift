@@ -10,13 +10,19 @@ import UIKit
 import CoreML
 import Vision
 
+class RecognitionCell: UITableViewCell {
+    
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var confidenceLabel: UILabel!
+}
+
+
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var table: UITableView!
     
-    var rows: [VNClassificationObservation] = []
+    var rows = [VNClassificationObservation]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +30,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         table.delegate = self
         table.dataSource = self
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rows.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = rows[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RecognitionCell", for: indexPath) as! RecognitionCell
+        
+        let row = rows[indexPath.row]
+        cell.categoryLabel?.text = String("\(row.identifier)")
+        cell.confidenceLabel?.text = String("\(row.confidence)")
         return cell
     }
 
@@ -93,12 +102,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
             guard let result = request.results as? [VNClassificationObservation] else { return}
 
-            rows = Array(result.prefix(5))
-
-            if let first = result.first {
-                self.textView.text = String("\(first.identifier) \(first.confidence)")
-            }
-
+            self.rows = Array(result.prefix(5))
+            self.table.reloadData()
+            print(self.rows)
         }
 
         let handler = VNImageRequestHandler(ciImage: ciimage)

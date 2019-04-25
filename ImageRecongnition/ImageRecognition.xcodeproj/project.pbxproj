@@ -98,12 +98,12 @@
 		956EDEDC2270E2C80029A024 /* ImageRecognition */ = {
 			isa = PBXGroup;
 			children = (
-				9516450C227109050098454F /* Resnet50.mlmodel */,
 				951645072270F5F50098454F /* Utils */,
 				956EDEDD2270E2C80029A024 /* AppDelegate.swift */,
 				956EDEF12270F23F0029A024 /* ForgotPasswordProtocol.swift */,
 				956EDEF42270F23F0029A024 /* ForgotPasswordViewController.swift */,
 				956EDEF32270F23F0029A024 /* SignupProtocol.swift */,
+				9516450C227109050098454F /* Resnet50.mlmodel */,
 				956EDEF22270F23F0029A024 /* SignupViewController.swift */,
 				95BF99B3227122FE001669AD /* Inceptionv3.mlmodel */,
 				956EDEDF2270E2C80029A024 /* ViewController.swift */,
